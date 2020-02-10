@@ -1,0 +1,26 @@
+{
+  "name": "js-testing",
+  "version": "1.0.0",
+  "description": "A simple project to get familiar with javascript testing using jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elshaka/js-testing.git"
+  },
+  "keywords": [],
+  "author": "Eleazar Meza <meza.eleazar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elshaka/js-testing/issues"
+  },
+  "homepage": "https://github.com/elshaka/js-testing#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "^25.1.0"
+  }
+}
