@@ -11,3 +11,7 @@ test('it does not blow up with an empty string', () => {
 test('it does not blow up with a single char string', () => {
   expect(reverseString('a')).toBe('a');
 });
+
+test('it throws an error if a string is not supplied', () => {
+  expect(reverseString(5)).toBe('Error: You must supply a string!');
+});
