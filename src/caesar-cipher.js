@@ -1,6 +1,6 @@
 const CaesarCipher = (() => {
   const caesar = (message, key, op = 1) => {
-    if (key === 0) { return message; }
+    if (key % 26 === 0) { return message; }
     if (key < 0) { key = 26 + key; }
 
     return message.replace(/[a-z]/ig, (c) => {

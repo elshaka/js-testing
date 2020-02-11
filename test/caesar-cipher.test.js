@@ -15,4 +15,12 @@ describe('#encrypt', () => {
     expect(CaesarCipher.encrypt('DEFEND!!!, the east wall of THE CASTLE!!!.', 1))
       .toBe('EFGFOE!!!, uif fbtu xbmm pg UIF DBTUMF!!!.');
   });
+
+  test('it should wrap from z to a', () => {
+    expect(CaesarCipher.encrypt('zzz zz z', 1)).toBe('aaa aa a');
+  });
+
+  test('it should not blow up with an empty string', () => {
+    expect(CaesarCipher.encrypt('', 2)).toBe('');
+  });
 });
