@@ -4,8 +4,6 @@ A simple project to get familiar with javascript testing using jest
 ## Built With
 - JavaScript
 - NPM
-
-## Prerequisites
 - [jest](https://github.com/facebook/jest)
 
 ## Authors
