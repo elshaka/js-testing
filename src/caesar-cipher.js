@@ -3,7 +3,7 @@ const CaesarCipher = (() => {
     if (key === 0) { return message; }
     if (key < 0) { key = 26 + key; }
 
-    return message.replace(/[a-z]/ig, c => {
+    return message.replace(/[a-z]/ig, (c) => {
       const offset = c.charCodeAt() < 97 ? 65 : 97;
       return String.fromCharCode(((c.charCodeAt() - offset + op * key) % 26) + offset);
     });

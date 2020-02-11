@@ -4,7 +4,8 @@
   "description": "A simple project to get familiar with javascript testing using jest",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "testW": "jest --watch"
   },
   "repository": {
     "type": "git",
