@@ -26,9 +26,9 @@ test('object returned has an length property', () => {
 });
 
 test('throws an error if array given is empty', () => {
-  expect(analyze([])).toBe('Error: Array cannot be empty!');
+  expect(() => { analyze([]); }).toThrow('Array cannot be empty!');
 });
 
 test('throws an error if anything but an array is given', () => {
-  expect(analyze(6)).toBe('Error: Must supply an Array!');
+  expect(() => { analyze(6); }).toThrow('Must supply an Array!');
 });
