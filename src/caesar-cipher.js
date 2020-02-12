@@ -1,4 +1,4 @@
-const CaesarCipher = (() => {
+const caesarCipher = (() => {
   const caesar = (message, key, op = 1) => {
     if (key % 26 === 0) { return message; }
     if (key < 0) { key = 26 + key; }
@@ -16,4 +16,4 @@ const CaesarCipher = (() => {
   return { encrypt, decrypt };
 })();
 
-module.exports = CaesarCipher;
+module.exports = caesarCipher;
